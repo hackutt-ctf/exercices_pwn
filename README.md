@@ -21,10 +21,10 @@ For 64 bits binaries: run `make 64`
 and if you want to compile without the Makefile, here are the commands:
 ```
 # For 32 bits
-gcc -o prog prog.c -m32 -fno-stack-protector -no-pie
+gcc -o prog prog.c -m32 -fno-stack-protector -no-pie -z execstack
 
 # For 64 bits
-gcc -o prog prog.c -fno-stack-protector -no-pie
+gcc -o prog prog.c -fno-stack-protector -no-pie -z execstack
 ```
 
 ## Documentation
