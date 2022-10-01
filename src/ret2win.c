@@ -6,7 +6,7 @@ void win(){
 }
 
 void foo(){
-    char d[2];
+    char d[10];
     gets(d);
 }
 

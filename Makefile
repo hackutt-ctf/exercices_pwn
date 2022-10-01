@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -g -no-pie -fno-stack-protector -z execstack
+CFLAGS = -no-pie -fno-stack-protector -z execstack
 IF_32 = -m32
 
 SRC_DIR=src
