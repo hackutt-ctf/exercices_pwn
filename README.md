@@ -25,6 +25,14 @@ gcc -o prog prog.c -m32 -fno-stack-protector -no-pie -z execstack
 
 # For 64 bits
 gcc -o prog prog.c -fno-stack-protector -no-pie -z execstack
+
+# For ropchain 32
+as -o ropchain_gadgets_32.o --32 ropchain_gadgets_32.asm
+gcc ropchain.c ropchain_gadgets_32.o -o ropchain_32 -m32 -fno-stack-protector -no-pie
+
+# For ropchain 64
+as -o ropchain_gadgets_64.o --64 ropchain_gadgets_64.asm
+gcc ropchain.c ropchain_gadgets_64.o -o ropchain_64 -fno-stack-protector -no-pie
 ```
 
 ## Documentation
