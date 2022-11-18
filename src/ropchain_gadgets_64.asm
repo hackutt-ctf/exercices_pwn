@@ -13,6 +13,7 @@ helper_1:
 	pop %rax
 	pop %rsi
 	ret
+	syscall
 
 helper_2:
 	mov %rdi,(%rsi)

@@ -24,3 +24,4 @@ helper_3:
 	pop %edx
 	pop %ebp
 	ret
+	int $0x80
